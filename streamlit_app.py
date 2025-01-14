@@ -7,9 +7,9 @@ st.set_page_config(
     layout="wide"
 )
 
-logo = "kangaroo_logo.png"
-screenshot_1 = "screenshot_1.png"
-screenshot_2 = "screenshot_2.png"
+logo = "logo.png"
+screenshot_1 = "kang.png"
+screenshot_2 = "lune.png"
 
 # Titre principal et introduction
 col1, col2 = st.columns([2, 3])
