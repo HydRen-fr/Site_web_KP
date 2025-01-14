@@ -58,7 +58,8 @@ testimonials = [
     "⭐️⭐️⭐️⭐️ 'Des combats épiques et une exploration incroyable !' - Mia",
     "⭐️⭐️⭐️⭐️⭐️ 'Le jeu le plus immersif que j'ai joué cette année !' - Lucas",
     "⭐️⭐️⭐️⭐️⭐️ 'Un jeu créé par des goats pour les goats...' - Le grand-frère de Lucas",
-    "⭐️⭐️⭐️⭐️⭐️ 'Dinguerie' - Le papa de Lucas"
+    "⭐️⭐️⭐️⭐️⭐️ 'Dinguerie' - Le papa de Lucas",
+    "⭐️⭐️⭐️⭐️⭐️ 'J'ai arrêté mon addiction à la douche grâce à Kangaroo Planet' - Kévin"
 ]
 for testimonial in testimonials:
     st.markdown(f"> {testimonial}")
