@@ -16,12 +16,14 @@ col1, col2 = st.columns([2, 3])
 with col1:
     st.image(logo, use_container_width=True)
 with col2:
-    st.title("🌍 **Kangaroo Planet**")
-    st.subheader("Piou piou piou")
-    st.write("""
-    **Kangaroo Planet** est un jeu d'action-survie-shooter immersif où vous incarnez un kangourou défendant sa planète d'une invasion humaine. 
-    Préparez-vous à combattre des ennemis redoutables et méchants !
-    """)
+    st.markdown("""
+    <div style='font-size: 24px;'>  <!-- Adjust font-size as needed -->
+        <h1>🌍 **Kangaroo Planet**</h1>
+        <h3>Piou piou piou</h3>
+        <p><strong>Kangaroo Planet</strong> est un jeu d'action-survie-shooter immersif où vous incarnez un kangourou défendant sa planète d'une invasion humaine. 
+        Préparez-vous à combattre des ennemis redoutables et méchants !</p>
+    </div>
+    """, unsafe_allow_html=True)
 
 # Section : Un jeu captivant
 st.header("🎮 **Un jeu captivant**")
@@ -59,6 +61,7 @@ testimonials = [
 for testimonial in testimonials:
     st.markdown(f"> {testimonial}")
 
+st.write("---")
 # Section : Contact et liens
 st.write("Nous n'avons pas de réseaux car nous sommes mystérieux mais nous sommes des élèves de la promo 2029 de l'EPITA !")
 
