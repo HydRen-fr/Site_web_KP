@@ -12,9 +12,9 @@ screenshot_1 = "kang.png"
 screenshot_2 = "lune.png"
 
 # Titre principal et introduction
-col1, col2 = st.columns([2, 3])
+col1, col2 = st.containers([2, 3])
 with col1:
-    st.image(logo, use_column_width=True)
+    st.image(logo, use_container_width=True)
 with col2:
     st.title("🌍 **Kangaroo Planet**")
     st.subheader("Piou piou piou")
@@ -33,11 +33,11 @@ st.markdown("""
 
 # Section : Captures d'écran
 st.header("📸 **Aperçu du jeu**")
-col1, col2 = st.columns(2)
+col1, col2 = st.containers(2)
 with col1:
-    st.image(screenshot_1, use_column_width=True, caption="Incarnez le meilleur des animaux : un kangourou")
+    st.image(screenshot_1, use_container_width=True, caption="Incarnez le meilleur des animaux : un kangourou")
 with col2:
-    st.image(screenshot_2, use_column_width=True, caption="Un univers magnifique et rigolo")
+    st.image(screenshot_2, use_container_width=True, caption="Un univers magnifique et rigolo")
 
 # Section : Développement
 st.header("🚀 **Coulisses du développement**")
