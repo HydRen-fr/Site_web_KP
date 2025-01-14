@@ -18,6 +18,7 @@ with col1:
 with col2:
     st.markdown("""
     <div style='font-size: 39px;'>  <!-- Adjust font-size as needed -->
+        <br>
         <h1>🌍 Kangaroo Planet</h1>
         <h3>Piou piou piou</h3>
         <p><strong>Kangaroo Planet</strong> est un jeu d'action-survie-shooter immersif où vous incarnez un kangourou défendant sa planète d'une invasion humaine. 
