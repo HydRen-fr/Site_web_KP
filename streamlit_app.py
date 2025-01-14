@@ -63,8 +63,24 @@ for testimonial in testimonials:
     st.markdown(f"> {testimonial}")
 
 st.write("---")
+# Exemple d'utilisation de st.download_button
+st.header("📄 **Téléchargez notre rapport de soutenance**")
+st.write("""
+    Vous pouvez télécharger notre rapport de soutenance en cliquant sur le bouton ci-dessous.
+    Ce rapport présente en détail le processus de développement, les choix techniques et les fonctionnalités principales du jeu **Kangaroo Planet**.
+""")
+# Ajouter un bouton de téléchargement pour le rapport
+with open("rapport_soutenance.pdf", "rb") as file:
+    st.download_button(
+        label="Télécharger le rapport de soutenance", 
+        data=file, 
+        file_name="rapport_soutenance.pdf", 
+        mime="application/pdf"
+    )
+    
+st.write("---")
 # Section : Contact et liens
 st.write("Nous n'avons pas de réseaux car nous sommes mystérieux mais nous sommes des élèves de la promo 2029 de l'EPITA !")
-
+    
 st.write("---")
 st.markdown("© 2025 Kangaroo Planet Team. Tous droits réservés.")
