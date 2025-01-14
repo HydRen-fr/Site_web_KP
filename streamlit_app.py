@@ -7,7 +7,7 @@ st.set_page_config(
     layout="wide"
 )
 
-logo = "logo.png"
+logo = "logo.jpg"
 screenshot_1 = "kang.png"
 screenshot_2 = "lune.png"
 
