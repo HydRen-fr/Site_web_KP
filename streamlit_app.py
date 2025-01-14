@@ -37,7 +37,7 @@ col1, col2 = st.columns(2)
 with col1:
     st.image(screenshot_1, use_column_width=True, caption="Incarnez le meilleur des animaux : un kangourou")
 with col2:
-    st.image(screenshot_2, use_column_width=True, caption="Affrontez des ennemis redoutables")
+    st.image(screenshot_2, use_column_width=True, caption="Un univers magnifique et rigolo")
 
 # Section : Développement
 st.header("🚀 **Coulisses du développement**")
