@@ -75,7 +75,7 @@ col1, col2 = st.columns(2)
 with col1:
     st.image(screenshot_1, use_container_width=True, caption="Incarnez le meilleur des animaux : un kangourou")
 with col2:
-    st.image(screenshot_2, use_container_width=True, caption="Un univers magnifique et rigolo")
+    st.image(screenshot_2, use_container_width=True, caption="Plein de modes différents")
 
 # 🛠️ Outils utilisés
 st.markdown("<div class='section-title'>🛠️ Outils utilisés</div>", unsafe_allow_html=True)
