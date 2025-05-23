@@ -9,8 +9,8 @@ st.set_page_config(
 
 # Chemins des fichiers
 logo = "logo.jpg"
-screenshot_1 = "kang.png"
-screenshot_2 = "lune.png"
+screenshot_1 = "gameplay.png"
+screenshot_2 = "menu.png"
 
 # Style CSS custom simple
 st.markdown("""
