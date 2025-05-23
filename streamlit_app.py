@@ -1,18 +1,18 @@
 import streamlit as st
 
-# Configuration de la page
+# Page configuration
 st.set_page_config(
     page_title="Kangaroo Planet",
     page_icon="🦘",
     layout="wide"
 )
 
-# Chemins des fichiers
+# File paths
 logo = "logo.jpg"
 screenshot_1 = "gameplay.png"
 screenshot_2 = "menu.png"
 
-# Style CSS custom simple
+# Simple custom CSS styling
 st.markdown("""
     <style>
         .title-container {
@@ -46,7 +46,7 @@ st.markdown("""
     </style>
 """, unsafe_allow_html=True)
 
-# Logo + Présentation
+# Logo + Introduction
 col1, col2 = st.columns([2, 3])
 with col1:
     st.image(logo, use_container_width=True)
@@ -55,16 +55,16 @@ with col2:
         <div style='margin-top: 200px;' class='title-container'>
             <h1>🌍 Kangaroo Planet</h1>
             <h3>Piou piou piou</h3>
-            <p><strong>Kangaroo Planet</strong> est un jeu d'action-survie-shooter immersif où vous incarnez un kangourou défendant sa planète d'une invasion humaine. 
-            Préparez-vous à combattre des ennemis redoutables et méchants !</p>
+            <p><strong>Kangaroo Planet</strong> is an immersive action-survival-shooter game where you play as a kangaroo defending its planet from a human invasion. 
+            Get ready to fight off fierce and nasty enemies!</p>
         </div>
     """, unsafe_allow_html=True)
 
-# 📄 Téléchargez le jeu
-st.markdown("<div class='section-title'>📄 Téléchargez le jeu et son manuel</div>", unsafe_allow_html=True)
+# 📄 Download the game
+st.markdown("<div class='section-title'>📄 Download the game and its manual</div>", unsafe_allow_html=True)
 resources = [
-    "🔗 [Jeu](https://drive.google.com/drive/folders/1MUrsS8FjkAjS2-CChNxKrlC-_n_yICsu?usp=sharing)",
-    "🔗 [Manuel](https://github.com/HydRen-fr/Kangaroo-Planet)",
+    "🔗 [Game](https://drive.google.com/drive/folders/1MUrsS8FjkAjS2-CChNxKrlC-_n_yICsu?usp=sharing)",
+    "🔗 [Manual](https://github.com/HydRen-fr/Kangaroo-Planet)",
 ]
 for r in resources:
     st.markdown(r)
@@ -72,67 +72,67 @@ for r in resources:
 # Footer
 st.markdown("<br><hr>", unsafe_allow_html=True)
 
-# 🎮 Un jeu captivant
-st.markdown("<div class='section-title'>🎮 Un jeu captivant</div>", unsafe_allow_html=True)
+# 🎮 A captivating game
+st.markdown("<div class='section-title'>🎮 A captivating game</div>", unsafe_allow_html=True)
 st.markdown("""
-- 🦘 **Incarnez un kangourou et SHOOTEZ-LES TOUS**
-- 😌 **Un jeu qui détend avant tout**
-- 🎶 **Profitez d'une bonne musique en fond tout en exterminant les bad guys**
-- 🔊 **Musique d’ambiance : Veridis Quo**
+- 🦘 **Play as a kangaroo and SHOOT THEM ALL**
+- 😌 **A game that's all about relaxation**
+- 🎶 **Enjoy great music while eliminating the bad guys**
+- 🔊 **Soundtrack: Veridis Quo**
 """)
 
-# 📸 Aperçu du jeu
-st.markdown("<div class='section-title'>📸 Aperçu du jeu</div>", unsafe_allow_html=True)
+# 📸 Game Preview
+st.markdown("<div class='section-title'>📸 Game Preview</div>", unsafe_allow_html=True)
 col1, col2 = st.columns(2)
 with col1:
-    st.image(screenshot_1, use_container_width=True, caption="Incarnez le meilleur des animaux : un kangourou")
+    st.image(screenshot_1, use_container_width=True, caption="Play as the greatest animal: the kangaroo")
 with col2:
-    st.image(screenshot_2, use_container_width=True, caption="Plein de modes différents")
+    st.image(screenshot_2, use_container_width=True, caption="Lots of different game modes")
 
-# 🛠️ Outils utilisés
-st.markdown("<div class='section-title'>🛠️ Outils utilisés</div>", unsafe_allow_html=True)
+# 🛠️ Tools used
+st.markdown("<div class='section-title'>🛠️ Tools Used</div>", unsafe_allow_html=True)
 st.markdown("""
-- 🎨 **Blender** : pour la modélisation 3D et les animations.
-- 🕹️ **Unity** : pour le gameplay, la gestion physique et le rendu.
+- 🎨 **Blender**: for 3D modeling and animations.
+- 🕹️ **Unity**: for gameplay, physics, and rendering.
 """)
 
-# 🚀 Coulisses du développement
-st.markdown("<div class='section-title'>🚀 Coulisses du développement</div>", unsafe_allow_html=True)
+# 🚀 Behind the scenes
+st.markdown("<div class='section-title'>🚀 Behind the Scenes</div>", unsafe_allow_html=True)
 st.markdown("""
-- 🧠 **IA ennemie** : comportements dynamiques et adaptatifs.
-- 🧱 **Scripts** : gestion des vagues, armes, scoring.
+- 🧠 **Enemy AI**: dynamic and adaptive behaviors.
+- 🧱 **Scripts**: wave management, weapons, scoring.
 """)
 
-# 💬 Témoignages
-st.markdown("<div class='section-title'>💬 Ce que disent les joueurs</div>", unsafe_allow_html=True)
+# 💬 Player testimonials
+st.markdown("<div class='section-title'>💬 What players say</div>", unsafe_allow_html=True)
 testimonials = [
-    "'Une expérience inoubliable, Kangaroo Planet est vraiment hors du commun !' – Alex",
-    "'Des combats épiques et une exploration incroyable !' – Mia",
-    "'Le jeu le plus immersif que j'ai joué cette année !' – Lucas",
-    "'Dinguerie' – Le papa de Lucas",
+    "'An unforgettable experience, Kangaroo Planet is truly out of this world!' – Alex",
+    "'Epic battles and incredible exploration!' – Mia",
+    "'The most immersive game I’ve played this year!' – Lucas",
+    "'Crazy stuff' – Lucas' dad",
 ]
 for t in testimonials:
     st.markdown(f"<div class='testimonial'>⭐️⭐️⭐️⭐️⭐️ {t}</div>", unsafe_allow_html=True)
 
-# 📄 Rapport de soutenance
-st.markdown("<div class='section-title'>📄 Téléchargez notre rapport de soutenance</div>", unsafe_allow_html=True)
+# 📄 Defense report
+st.markdown("<div class='section-title'>📄 Download our final defense report</div>", unsafe_allow_html=True)
 st.markdown("""
-Ce rapport présente en détail le processus de développement, les choix techniques et les fonctionnalités principales de **Kangaroo Planet**.
+This report details the development process, technical decisions, and main features of **Kangaroo Planet**.
 """)
 with open("Final_defense_report.pdf", "rb") as file:
     st.download_button(
-        label="📥 Télécharger le rapport", 
+        label="📥 Download the report", 
         data=file, 
         file_name="Final_defense_report.pdf", 
         mime="application/pdf"
     )
-    
-# 📁 Ressources
-st.markdown("<div class='section-title'>📁 Les ressources utilisées</div>", unsafe_allow_html=True)
+
+# 📁 Resources used
+st.markdown("<div class='section-title'>📁 Resources Used</div>", unsafe_allow_html=True)
 resources = [
     "🔗 [Blender](https://www.blender.org/download/)",
     "🔗 [Unity](https://www.unity.com)",
-    "🔗 Musique : [Veridis Quo – Daft Punk](https://www.youtube.com/watch?v=TCd6PfxOy0Y)"
+    "🔗 Music: [Veridis Quo – Daft Punk](https://www.youtube.com/watch?v=TCd6PfxOy0Y)"
 ]
 for r in resources:
     st.markdown(r)
@@ -140,21 +140,21 @@ for r in resources:
 # Footer
 st.markdown("<br><hr>", unsafe_allow_html=True)
 
-st.header("👥 **L'équipe Kangaroo Planet**")
+st.header("👥 **The Kangaroo Planet Team**")
 st.markdown("""
-- 🟩 **Eliott - L’Énergique** : Sportif discipliné, il a transformé ses efforts en force mentale. A remplacé Windows par Linux au lycée.
-- 🟪 **Nicolas - L’Inventif** : Passionné de Minecraft et de création de mondes. Expérimenté en modération de serveurs Discord.
-- 🟥 **Hélios - Le Codeur** : Programme depuis la 6e, spécialisé en développement web. Il assure toute la structure technique du jeu.
-- 🟧 **Tanguy - Le Stratège** : Amoureux des maths et des échecs, il a exploré la programmation d’IA pour mieux dominer le plateau.
+- 🟩 **Eliott - The Energetic One**: A disciplined athlete who turned effort into mental strength. Switched from Windows to Linux in high school.
+- 🟪 **Nicolas - The Inventor**: Minecraft lover and world creator. Experienced in moderating Discord servers.
+- 🟥 **Hélios - The Coder**: Coding since 6th grade, specialized in web development. Handles the entire technical structure of the game.
+- 🟧 **Tanguy - The Strategist**: Loves math and chess, explored AI programming to dominate the board.
 """)
 
-st.subheader("📧 **Contacts de l'équipe**")
+st.subheader("📧 **Team Contact Info**")
 st.markdown("""
-- Tanguy : [tanguy.de-jerphanion@epita.fr](mailto:tanguy.de-jerphanion@epita.fr)
-- Hélios : [helios.bringuet@epita.fr](mailto:helios.bringuet@epita.fr)
-- Eliott : [eliott.caquelot@epita.fr](mailto:eliott.caquelot@epita.fr)
-- Nicolas : [nicolas.delisle@epita.fr](mailto:nicolas.delisle@epita.fr)
+- Tanguy: [tanguy.de-jerphanion@epita.fr](mailto:tanguy.de-jerphanion@epita.fr)
+- Hélios: [helios.bringuet@epita.fr](mailto:helios.bringuet@epita.fr)
+- Eliott: [eliott.caquelot@epita.fr](mailto:eliott.caquelot@epita.fr)
+- Nicolas: [nicolas.delisle@epita.fr](mailto:nicolas.delisle@epita.fr)
 """)
 st.write("---")
 
-st.markdown("<center>© 2025 Kangaroo Planet Team. Tous droits réservés.</center>", unsafe_allow_html=True)
+st.markdown("<center>© 2025 Kangaroo Planet Team. All rights reserved.</center>", unsafe_allow_html=True)
