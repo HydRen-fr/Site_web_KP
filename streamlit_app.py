@@ -60,6 +60,19 @@ with col2:
         </div>
     """, unsafe_allow_html=True)
 
+# 📄 Téléchargez le jeu
+st.markdown("<div class='section-title'>📄 Téléchargez notre rapport de soutenance</div>", unsafe_allow_html=True)
+st.markdown("""
+Ce rapport présente en détail le processus de développement, les choix techniques et les fonctionnalités principales de **Kangaroo Planet**.
+""")
+with open("Final_defense_report.pdf", "rb") as file:
+    st.download_button(
+        label="📥 Télécharger le rapport", 
+        data=file, 
+        file_name="Final_defense_report.pdf", 
+        mime="application/pdf"
+    )
+
 # 🎮 Un jeu captivant
 st.markdown("<div class='section-title'>🎮 Un jeu captivant</div>", unsafe_allow_html=True)
 st.markdown("""
@@ -82,7 +95,6 @@ st.markdown("<div class='section-title'>🛠️ Outils utilisés</div>", unsafe_
 st.markdown("""
 - 🎨 **Blender** : pour la modélisation 3D et les animations.
 - 🕹️ **Unity** : pour le gameplay, la gestion physique et le rendu.
-- 🎼 **FL Studio** : pour certaines ambiances sonores et bruitages.
 """)
 
 # 🚀 Coulisses du développement
@@ -90,7 +102,6 @@ st.markdown("<div class='section-title'>🚀 Coulisses du développement</div>",
 st.markdown("""
 - 🧠 **IA ennemie** : comportements dynamiques et adaptatifs.
 - 🧱 **Scripts** : gestion des vagues, armes, scoring.
-- 🌌 **Direction artistique** : paysages extraterrestres + vibes australiennes.
 """)
 
 # 💬 Témoignages
@@ -116,6 +127,7 @@ with open("Final_defense_report.pdf", "rb") as file:
         file_name="Final_defense_report.pdf", 
         mime="application/pdf"
     )
+    
 # 📁 Ressources
 st.markdown("<div class='section-title'>📁 Les ressources utilisées</div>", unsafe_allow_html=True)
 resources = [
