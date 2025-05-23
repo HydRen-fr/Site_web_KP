@@ -111,11 +111,11 @@ st.markdown("<div class='section-title'>📄 Téléchargez notre rapport de sout
 st.markdown("""
 Ce rapport présente en détail le processus de développement, les choix techniques et les fonctionnalités principales de **Kangaroo Planet**.
 """)
-with open("rapport_soutenance.pdf", "rb") as file:
+with open("Final_defense_report.pdf", "rb") as file:
     st.download_button(
         label="📥 Télécharger le rapport", 
         data=file, 
-        file_name="rapport_soutenance.pdf", 
+        file_name="Final_defense_report.pdf", 
         mime="application/pdf"
     )
 # 📁 Ressources
