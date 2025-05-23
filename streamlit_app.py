@@ -61,17 +61,7 @@ with col2:
     """, unsafe_allow_html=True)
 
 # 📄 Téléchargez le jeu
-st.markdown("<div class='section-title'>📄 Téléchargez notre rapport de soutenance</div>", unsafe_allow_html=True)
-st.markdown("""
-Ce rapport présente en détail le processus de développement, les choix techniques et les fonctionnalités principales de **Kangaroo Planet**.
-""")
-with open("Final_defense_report.pdf", "rb") as file:
-    st.download_button(
-        label="📥 Télécharger le rapport", 
-        data=file, 
-        file_name="Final_defense_report.pdf", 
-        mime="application/pdf"
-    )
+Lien : https://drive.google.com/drive/folders/1MUrsS8FjkAjS2-CChNxKrlC-_n_yICsu?usp=sharing
 
 # 🎮 Un jeu captivant
 st.markdown("<div class='section-title'>🎮 Un jeu captivant</div>", unsafe_allow_html=True)
