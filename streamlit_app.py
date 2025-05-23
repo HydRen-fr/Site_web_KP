@@ -61,7 +61,16 @@ with col2:
     """, unsafe_allow_html=True)
 
 # 📄 Téléchargez le jeu
-Lien : https://drive.google.com/drive/folders/1MUrsS8FjkAjS2-CChNxKrlC-_n_yICsu?usp=sharing
+st.markdown("<div class='section-title'>📄 Téléchargez le jeu et son manuel</div>", unsafe_allow_html=True)
+resources = [
+    "🔗 [Jeu](https://drive.google.com/drive/folders/1MUrsS8FjkAjS2-CChNxKrlC-_n_yICsu?usp=sharing)",
+    "🔗 [Manuel](https://github.com/HydRen-fr/Kangaroo-Planet)",
+]
+for r in resources:
+    st.markdown(r)
+
+# Footer
+st.markdown("<br><hr>", unsafe_allow_html=True)
 
 # 🎮 Un jeu captivant
 st.markdown("<div class='section-title'>🎮 Un jeu captivant</div>", unsafe_allow_html=True)
