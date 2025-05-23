@@ -56,6 +56,22 @@ with col2:
             <p></p>
             <p></p>
             <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
             <h1>🌍 Kangaroo Planet</h1>
             <h3>Piou piou piou</h3>
             <p><strong>Kangaroo Planet</strong> est un jeu d'action-survie-shooter immersif où vous incarnez un kangourou défendant sa planète d'une invasion humaine. 
