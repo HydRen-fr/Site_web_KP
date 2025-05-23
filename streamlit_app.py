@@ -52,7 +52,7 @@ with col1:
     st.image(logo, use_container_width=True)
 with col2:
     st.markdown("""
-        <div style='margin-top: 250px;' class='title-container'>
+        <div style='margin-top: 200px;' class='title-container'>
             <h1>🌍 Kangaroo Planet</h1>
             <h3>Piou piou piou</h3>
             <p><strong>Kangaroo Planet</strong> est un jeu d'action-survie-shooter immersif où vous incarnez un kangourou défendant sa planète d'une invasion humaine. 
